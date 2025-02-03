@@ -27,13 +27,11 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "gitopsterrastate"
+    bucket = "terraform-gitops-98"
     key    = "terraform.tfstate"
-    region = "us-east-2"
+    region = "us-east-1"
   }
 
-  required_version = "~> 1.6.3"
+  required_version = "~> 1.6, >= 1.10" # Updated to allow Terraform >= 1.10
 }
-##
-##
-##
+
