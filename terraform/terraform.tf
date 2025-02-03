@@ -35,4 +35,3 @@ terraform {
   required_version = "~> 1.6, >= 1.10" # Updated to allow Terraform >= 1.10
 }
 
-
